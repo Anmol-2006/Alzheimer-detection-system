@@ -1,0 +1,231 @@
+/* General styles */
+.animated-text {
+  font-size: 24px;
+  color: white;
+  animation: slide-color 7.5s infinite;
+  position: relative;
+}
+
+@keyframes slide-color {
+  0% {
+    transform: translateX(100%);
+    color: #3E362E;
+  }
+  50% {
+    transform: translateX(0);
+    color: white;
+  }
+  100% {
+    transform: translateX(-100%);
+    color: #3E362E;
+  }
+}
+.chatbot-container {
+  max-width: 100%;
+  width: 400px; /* Increased width slightly more */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e2cbbb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-container h2 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.chat-box {
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.chat-box p {
+  margin: 5px 0;
+}
+
+#user-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #865D36;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #3E362E;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.text {
+  text-align: left;
+  font-weight: bold;
+}
+
+.image{
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
+
+.symptoms-btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #c4af9c;
+  color: #3E362E;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.symptoms-btn:hover {
+  background-color: #3E362E;
+  color: #c4af9c;
+}
+
+.para {
+  text-align: justify;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  color: rgb(255,255,255);
+}
+
+/* Header styles */
+header {
+  background-color: #3E362E;
+  color: #93785B;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px; /* Add this line to reduce large spacing between columns */
+}
+
+.middle-content {
+  flex: 2; 
+  background-color: #AC8968;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 10px; /* Optional: fine-tune right spacing */
+}
+.href{
+   color:#93785B;
+}
+.right-side {
+  flex: 1;
+  background-color: #e2cbbb;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 0px; /* Reduce or remove extra margin */
+  align-items: center;
+}
+
+
+.signup-container {
+  border: 1px solid #93785B;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  width: 300px; /* Increased width */
+}
+
+.signup-container input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #A69080;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-container button {
+  background-color: #c79565;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.signup-container button:hover {
+  background-color: #eeae47;
+}
+
+.signup-container:hover {
+  transform: scale(1.02);
+}
+
+.quick navigation {
+  flex :1;
+  display : flex;
+
+  width: 100%;
+  max-width: 320px;
+  background: linear-gradient(to bottom right, #ffffff, #e0f7fa);
+  padding: 50px 35px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Form styles (if included in the future) */
+.upload-container {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
